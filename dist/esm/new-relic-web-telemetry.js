@@ -1,17 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NewRelicWebTelemetry = void 0;
-const browser_agent_1 = require("@newrelic/browser-agent/loaders/browser-agent");
 const exceptions_1 = require("./exceptions");
 class NewRelicWebTelemetry {
     _browserAgent;
     constructor(_browserAgent) {
         this._browserAgent = _browserAgent;
-    }
-    init(agentOptions) {
-        if (!this._browserAgent) {
-            this._browserAgent = new browser_agent_1.BrowserAgent(agentOptions);
-        }
     }
     setCustomContext(key, value) {
         this.browserAgent.setCustomAttribute(key, value);

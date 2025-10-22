@@ -1,6 +1,6 @@
 {
   "name": "@schorts/new-relic-web-telemetry",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -48,6 +48,6 @@
   "homepage": "https://github.com/schorts99/new-relic-web-telemetry#readme",
   "dependencies": {
     "@newrelic/browser-agent": "^1.301.0",
-    "@schorts/shared-kernel": "^4.1.2"
+    "@schorts/shared-kernel": "^4.2.1"
   }
 }
